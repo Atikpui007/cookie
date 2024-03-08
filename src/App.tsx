@@ -40,7 +40,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <h1>Cookie Clicker</h1>
-      <img src={selectedCookie.image} alt={selectedCookie.name} />
+      <img src={selectedCookie.image} alt={selectedCookie.name} onClick={handleCookieClick}/>
       <p>Cookie Clicks: {clickCount}</p>
       <button onClick={resetCounter}>Reset</button>
       <button onClick={changeCookie}>Change Cookie</button>
